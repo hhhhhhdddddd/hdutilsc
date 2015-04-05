@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "hdutils.h"
+#include "hdstr.h"
 
 int main(void) {
     char *pHello = "hello";
