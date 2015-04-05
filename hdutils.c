@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void noUnusedVarWarning() {}
+void noUnusedVarWarning(void) {}
 
 void printSectionSeparator(void) {
     printf("%s\n", "--------------------");
