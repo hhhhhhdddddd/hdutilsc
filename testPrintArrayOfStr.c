@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "hdutils.h"
-#include "hdstr.h"
+#include "hdarray.h"
 
 int main(void) {
     char *pHello = "hello";
@@ -10,13 +10,12 @@ int main(void) {
     char **strArr = pCharArr;
 
     printf("%s\n", strArr[0]);
-    printSectionSeparator();
+    printTestSectionSeparator();
     printf("%s\n", *strArr);
-    printSectionSeparator();
+    printTestSectionSeparator();
     printf("%s\n", *(strArr+1));
-    printSectionSeparator();
+    printTestSectionSeparator();
     printArrayOfStr( strArr );
-    printSectionSeparator();
 
     return 0;
 }

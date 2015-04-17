@@ -1,13 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "hdutils.h"
 
-void noUnusedVarWarning(void) {}
-
-void printSectionSeparator(void) {
-    printf("%s\n", "--------------------");
+void *getMemory(int size) {
+    void *newMem = malloc(size);
+    if (newMem == NULL) {
+        printf("Out of memory!\n");
+        exit(1);
+    }
+    return newMem;
 }
 
-void printArrayOfStr(char **strArr) {
-    for( ; *strArr != NULL; strArr += 1) {
-        printf("%s\n", *strArr);
-    }
+void printTestSectionSeparator() {
+    printf("\n--------------------\n");
 }
