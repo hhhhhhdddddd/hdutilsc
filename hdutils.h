@@ -8,4 +8,6 @@ void *getMemory(int size);
 
 void printTestSectionSeparator(void);
 
+void timeIntToDoubleFunc(char name[], double (*f)(int), int arg, int nexec);
+
 #endif
